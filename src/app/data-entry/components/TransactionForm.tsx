@@ -172,7 +172,7 @@ export default function TransactionForm({ onSuccess }: TransactionFormProps) {
               id="studentNumber"
               type="text"
               className={`form-input pl-9 pr-10 font-mono ${errors.studentNumber ? 'border-red-400 focus:ring-red-400' : lookupStudent ? 'border-green-400 focus:ring-green-400' : ''}`}
-              placeholder="STU-1001"
+              placeholder="001"
               {...register('studentNumber', { required: 'Student number is required' })}
             />
             <div className="absolute right-3 top-1/2 -translate-y-1/2">
@@ -350,7 +350,7 @@ export default function TransactionForm({ onSuccess }: TransactionFormProps) {
         </div>
 
         {/* Quick reference */}
-        <div className="pt-2 border-t border-slate-100">
+        {/* <div className="pt-2 border-t border-slate-100">
           <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-2">Quick Reference — Student Numbers</p>
           <div className="grid grid-cols-2 gap-1">
             {['STU-1001 — Aiden Park', 'STU-1002 — Brianna Torres', 'STU-1042 — James Okonkwo', 'STU-1078 — Sofia Ramirez'].map((hint, i) => (
@@ -364,7 +364,7 @@ export default function TransactionForm({ onSuccess }: TransactionFormProps) {
               </button>
             ))}
           </div>
-        </div>
+        </div> */}
       </form>
     </div>
   );
